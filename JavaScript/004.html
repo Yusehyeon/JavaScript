@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+  </head>
+  <body>
+    <script>
+      console.log("hello world"); // print와 같습니다.
+      const x = [10, 20, 30];
+      /* 변수 선언하는 방법 3가지 
+      대부분 const로 선언 var는 지금 시대에 적절치 않은 변수선언
+      var x : 전역변수 x를 선언 (함수 스코프)
+      let x : 변경이 가능한 변수, 블록스코프를 갖는 x 선언
+      const x : 변경이 불가능한 변수, 블록스코프를 갖는 x 선언
+      */
+      console.dir(x); // print(dir(x))와 같습니다.
+      const y = {
+        one: 1,
+        two: 2,
+        three: 3,
+      };
+      console.table(y);
+
+      console.group("one");
+      console.log("hojun/member");
+      console.log("junghyo/member");
+      console.log("sungcheol/member");
+      console.group("two");
+      console.log("edo/member");
+      console.log("gihyun/member");
+      console.log("seolgi/member");
+      console.groupEnd();
+      console.log("end");
+      console.groupEnd();
+      console.log("end");
+
+      // 이 이후로 있는 것은 자주 사용하진 않습니다.
+
+      // console.error
+      // console.warn
+      // console.info
+      // ...
+
+      console.log("%c경고!", "color:red;font-size:26px;");
+      // https://patorjk.com/software/taag/#p=display&f=Graffiti&t=Type%20Something%20 와 같은 사이트를 이용해서 콘솔이나 쉘을 더 아름답게(?) 꾸며줄 수 있습니다.
+    </script>
+  </body>
+</html>
